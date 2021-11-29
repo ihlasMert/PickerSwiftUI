@@ -8,14 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var date = Date()
+    
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        DatePicker("date", selection: $date)
+         
+            
     }
-}
+    }
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
 }
+
+
